@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.varun.fix_it" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fixit"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".forget_search"
+            android:label="@string/title_activity_forget_search" >
+        </activity>
+        <activity
+            android:name=".DataBaseHelper"
+            android:label="@string/title_activity_data_base_helper" >
+        </activity>
+        <activity
+            android:name=".LoginDataBaseAdapter"
+            android:label="@string/title_activity_login_data_base_adapter" >
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".creatematch"
+            android:label="@string/title_activity_creatematch" >
+            <intent-filter>
+                <action android:name="com.example.varun.create.creatematch" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".joinmatch"
+            android:label="@string/title_activity_joinmatch" >
+            <intent-filter>
+                <action android:name="com.example.varun.fix_it.joinmatch" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sport"
+            android:label="@string/title_activity_sport" >
+            <intent-filter>
+                <action android:name="com.example.varun.create.sport" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateDeleteMatchActivity"
+            android:label="@string/title_activity_update_delete_match" >
+        </activity>
+        <activity
+            android:name=".MatchListActivity"
+            android:label="@string/title_activity_match_list" >
+        </activity>
+    </application>
+
+</manifest>

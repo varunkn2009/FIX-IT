@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/Username_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="25dp"
+
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:backgroundTint="#FFFFFF"
+                    android:clickable="true"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="password"
+                    android:layout_below="@id/Username_edt"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/password_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/textView1"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#000000"
+                    android:editable="true"
+                    android:background="#FFFFFF">
+
+                    <requestFocus />
+                </EditText>
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="showpassword"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="repassword"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/repassword_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:backgroundTint="#FFFFFF"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="securityhint"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/securityhint_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+
+                    android:ems="10"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:backgroundTint="#FFFFFF"
+                    android:background="#FFFFFF">
+                </EditText>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="register" />
+
+                <Button
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="15dp"
+
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="cancel" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
